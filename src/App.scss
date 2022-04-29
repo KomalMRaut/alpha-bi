@@ -1,0 +1,112 @@
+@import url(//db.onlinewebfonts.com/c/0406c39d71726a4efe1134bf8e3feb71?family=Apercu+Pro);
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background: #f2f4f8;
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2.5rem;
+    width: 100%;
+    .search-box {
+      display: flex;
+      align-items: center;
+      padding: 1.5rem;
+      background: #ffffff;
+      border-radius: 1.25rem 1.25rem 0 0;
+      .search-box__bar {
+        display: flex;
+        align-items: center;
+        padding: 0 1.5rem;
+        border-radius: 0.75rem;
+        background: #f2f4f8;
+        margin-right: 1rem;
+        input {
+          font-family: "Apercu Pro";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.25rem;
+          line-height: 1.625rem;
+          color: #000000;
+          padding: 1.5rem 0;
+          border: none;
+          background: transparent;
+          width: 55.03rem;
+          height: 1.625rem;
+          outline: none;
+          margin-left: 0.625rem;
+          &::placeholder {
+            color: #000;
+          }
+        }
+      }
+      .search-btn {
+        border: none;
+        outline: none;
+        padding: 24px;
+        background: #000000;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: "Apercu Pro";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+      }
+    }
+    .search-result {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 1.5rem;
+      width: 71rem;
+      background: #ffffff;
+      border-radius: 0 0 1.25rem 1.25rem;
+      .search-result__item {
+        border-radius: 0.75rem;
+        width: 354px;
+        height: 236px;
+      }
+      .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0;
+        .pagination__move {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          font-family: "IBM Plex Mono";
+          font-weight: 600;
+          font-size: 0.875rem;
+          line-height: 1rem;
+          color: #272727;
+          margin: 0 1rem;
+        }
+        .pagination__count {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          font-family: "IBM Plex Mono";
+          font-weight: 600;
+          font-size: 0.875rem;
+          line-height: 1rem;
+          color: #272727;
+          margin: 0 1rem;
+        }
+        .pagination__selected {
+          background: #fce5ee;
+          padding: 0.875rem;
+          border-bottom: 1px solid #eb518f;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
