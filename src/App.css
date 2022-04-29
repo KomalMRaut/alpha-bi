@@ -108,9 +108,82 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 1.5rem;
-  width: 71rem;
-  background: #ffffff;
+  width: 68rem;
+  background: #fff;
   border-radius: 0 0 1.25rem 1.25rem;
+}
+
+.app .search .search-result .loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 37rem;
+}
+
+.app .search .search-result .loader .loading {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.app .search .search-result .loader .loading div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #b6bac2 transparent transparent transparent;
+}
+
+.app .search .search-result .loader .loading div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.app .search .search-result .loader .loading div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.app .search .search-result .loader .loading div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .app .search .search-result .search-result__item {
@@ -161,6 +234,10 @@
   background: #fce5ee;
   padding: 0.875rem;
   border-bottom: 1px solid #eb518f;
+  cursor: pointer;
+}
+
+button {
   cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */
